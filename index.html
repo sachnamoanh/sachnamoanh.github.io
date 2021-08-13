@@ -6,6 +6,28 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+#animate {
+    width: 1600px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    padding-top: 5px;
+    color: white;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: pink;}
+    50%  {background-color: blue;}
+    65% {background-color: green;}
+    80% {background-color: violet;}
+    100% {background-color: grey;}
+  }
+}
+</style>
+
 <body id="myPage">
 
 <!-- Sidebar on click -->
@@ -22,21 +44,22 @@
 
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-border w3-green w3-large w3-left-align">
+ <div class="w3-bar w3-turqoise w3-large w3-left-align" style="font-weight: bold;">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="./index.html" class="w3-bar-item w3-button w3-teal"><img src="./index/logo.png" style="width: 42px;height: 42px"/></a>
-  <a href="./sach.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small w3-hover-white">Sách</a>
-  <a href="./docau.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small w3-hover-white">Đồ Câu</a>
-  <a href="./dochoi.html" class="w3-bar-item w3-button w3-padding-16 w3-hide-small w3-hover-white">Đồ chơi</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-16" title="Notifications"> Chủ cửa hàng <i class="fa fa-caret-down"></i></button>     
+  <a href="./index.html" class="w3-bar-item w3-button w3-teal"><img src="./index/logo.png" style="width: 58px;height: 58px"/></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-24" title="Notifications"> Chủ cửa hàng <i class="fa fa-caret-down"></i></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
       <a href="https://www.facebook.com/profile.php?id=100008563624315" class="w3-bar-item w3-button"> Mrs. Oanh </a>
       <a href="https://www.facebook.com/profile.php?id=100034828937760" class="w3-bar-item w3-button"> Mr. Nam </a>
     </div>
   </div>
-  <a href="#map" class="w3-bar-item w3-button w3-padding-16 w3-hide-small w3-hover-white">Đường đi tới cửa hàng</a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+  <a href="./sach.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><img src="./index/sach.png" style="width: 58px;height: 58px"/></a>
+  <a href="./docau.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><img src="./index/docau.png" style="width: 58px;height: 58px"/></a>
+  <a href="./dochoi.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><img src="./index/toy.png" style="width: 58px;height: 58px"/></a>
+    
+  <a href="#map" class="w3-bar-item w3-button w3-padding-24 w3-hide-small w3-hover-white">Đường đi tới cửa hàng</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-24 w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
  </div>
 
   <!-- Navbar on small screens -->
@@ -45,20 +68,15 @@
     <a href="./docau.html" class="w3-bar-item w3-button">Đồ câu</a>
     <a href="./dochoi.html" class="w3-bar-item w3-button">Đồ chơi</a>
     <a href="#map" class="w3-bar-item w3-button">Bản đồ</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-16" title="Notifications"> Chủ cửa hàng <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="https://www.facebook.com/profile.php?id=100008563624315" class="w3-bar-item w3-button"> Mrs. Oanh </a>
-      <a href="https://www.facebook.com/profile.php?id=100034828937760" class="w3-bar-item w3-button"> Mr. Nam </a>
-    </div>
-  </div>
+    <a href="https://www.facebook.com/profile.php?id=100008563624315" class="w3-bar-item w3-button"> Mrs. Oanh </a>
+    <a href="https://www.facebook.com/profile.php?id=100034828937760" class="w3-bar-item w3-button"> Mr. Nam </a>
     <!--<a href="#" class="w3-bar-item w3-button">Search</a>-->
   </div>
 </div>
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="https://www.w3schools.com/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <img src="./index/bg2.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">🎁</button>
   </div>
@@ -83,21 +101,21 @@
 </div>
 
 <!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>Quản lý cửa hàng</h2>
-<p>Dưới đây là thông tin về chủ cửa hàng:</p>
+<div class="w3-container w3-padding-64 w3-center" style="font-weight: bold">
+<div id="animate"><h2><b>Quản lý cửa hàng</b></h2>
+<p>Dưới đây là thông tin về chủ cửa hàng:</p></div>
 
-<div class="w3-row"><br>
+<div class="w3-row" style="background-image: url(./index/bg3.jpg)"><br>
 
 <div class="w3-half">
   <img src="./index/mamaOanh.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Nguyễn Thị Kim Oanh</h3>
+  <h3 style="color:red"><b><i>Nguyễn Thị Kim Oanh</i></b></h3>
   <p>Giáo viên/Thương nhân</p>
 </div>
 
 <div class="w3-half">
   <img src="./index/dadNam.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Nguyễn Đăng Nam</h3>
+  <h3 style="color:blue"><b><i>Nguyễn Đăng Nam</i></b></h3>
   <p>Thương nhân/Tackler</p>
 </div>
 
@@ -269,7 +287,7 @@
   <a class="w3-button w3-large w3-teal" href="https://goo.gl/maps/YGrWDEmGzYo6ZeZe6" title="Google +"><i class="fa fa-google-plus"></i></a>
   <!-- <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
   <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a> -->
-  <p> Được viết bởi <a href="https:/fb.com/anhnh305" target="_blank">con rể ♥</a></p>
+  <p> Được viết bởi <a href="https://fb.com/anhnh305" target="_blank">con rể ♥</a></p>
 
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Lên đầu trang</span>   
